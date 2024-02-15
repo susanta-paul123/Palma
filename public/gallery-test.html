@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Palma</title>
+    <!-- Bootstrap -->
+    <link href="ui/stylesheet/main.css" rel="stylesheet">
+    <link href="ui/stylesheet/fancybox.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='ui/stylesheet/slick.min.css'>
+    <link rel='stylesheet' href='ui/stylesheet/slick-theme.min.css'>
+    <link href="ui/stylesheet/custom.css" rel="stylesheet">
+    <link rel="icon" href="ui/media/images/favicon.png">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+  <style>
+    .popup-fw{
+      opacity: 0;
+      visibility: hidden;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background-color: rgba(0,0,0,0.9);
+      z-index:-1;
+      transition: ease all 0.5s;
+
+    }
+    .popup-fw.popup-show{
+      opacity:1;
+      visibility: visible;
+      z-index: 999;
+    }
+  </style>
+   
+</head>
+
+<body class="body">
+    <div class="page-wrapper">
+     <main class="main">
+      <section class="our-approach-section logo-bg-right py-lg-5 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="title center mb-lg-5 mb-4">
+                        <span>UPDATES</span>
+                        <h2 class="text-uppercase">PROJECT Title</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <ul class="list-unstyled d-flex flex-wrap gallery-item-box-wrapper">
+                        <li>
+                            <div class="gallery-item-box trg" data-trg="a1">
+                                <div class="hover-content">
+                                    <img src="ui/media/images/plus-icon-l.png" alt="">
+                                </div>
+                                <div class="date">
+                                    <h5>December 2022</h5>
+                                </div>
+                                <div class="img-box">
+                                    <img src="ui/media/images/gl14.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="gallery-item-box trg" data-trg="a2">
+                                <div class="hover-content">
+                                  <img src="ui/media/images/plus-icon-l.png" alt="">
+                                </div>
+                                <div class="date">
+                                    <h5>November 2022</h5>
+                                </div>
+                                <div class="img-box">
+                                    <img src="ui/media/images/gl1.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="gallery-item-box trg" data-trg="a3">
+                                <div class="hover-content">
+                                  <img src="ui/media/images/plus-icon-l.png" alt="">
+                                </div>
+                                <div class="date">
+                                    <h5>October 2022</h5>
+                                </div>
+                                <div class="img-box">
+                                    <img src="ui/media/images/gl2.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="gallery-item-box">
+                                <div class="hover-content">
+                                  <img src="ui/media/images/plus-icon-l.png" alt="">
+                                </div>
+                                <div class="date">
+                                    <h5>September 2022</h5>
+                                </div>
+                                <div class="img-box">
+                                    <img src="ui/media/images/gl3.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="gallery-item-box">
+                                <div class="hover-content">
+                                  <img src="ui/media/images/plus-icon-l.png" alt="">
+                                </div>
+                                <div class="date">
+                                    <h5>August 2022</h5>
+                                </div>
+                                <div class="img-box">
+                                    <img src="ui/media/images/gl4.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="gallery-item-box">
+                                <div class="hover-content">
+                                  <img src="ui/media/images/plus-icon-l.png" alt="">
+                                </div>
+                                <div class="date">
+                                    <h5>July 2022</h5>
+                                </div>
+                                <div class="img-box">
+                                    <img src="ui/media/images/gl5.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="gallery-item-box">
+                                <div class="hover-content">
+                                  <img src="ui/media/images/plus-icon-l.png" alt="">
+                                </div>
+                                <div class="date">
+                                    <h5>June 2022</h5>
+                                </div>
+                                <div class="img-box">
+                                    <img src="ui/media/images/gl6.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="gallery-item-box">
+                                <div class="hover-content">
+                                  <img src="ui/media/images/plus-icon-l.png" alt="">
+                                </div>
+                                <div class="date">
+                                    <h5>May 2022</h5>
+                                </div>
+                                <div class="img-box">
+                                    <img src="ui/media/images/gl7.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="gallery-item-box">
+                                <div class="hover-content">
+                                  <img src="ui/media/images/plus-icon-l.png" alt="">
+                                </div>
+                                <div class="date">
+                                    <h5>April 2022</h5>
+                                </div>
+                                <div class="img-box">
+                                    <img src="ui/media/images/gl8.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="gallery-item-box">
+                                <div class="hover-content">
+                                  <img src="ui/media/images/plus-icon-l.png" alt="">
+                                </div>
+                                <div class="date">
+                                    <h5>March 2022</h5>
+                                </div>
+                                <div class="img-box">
+                                    <img src="ui/media/images/gl9.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="gallery-item-box">
+                                <div class="hover-content">
+                                  <img src="ui/media/images/plus-icon-l.png" alt="">
+                                </div>
+                                <div class="date">
+                                    <h5>February 2022</h5>
+                                </div>
+                                <div class="img-box">
+                                    <img src="ui/media/images/gl10.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="gallery-item-box">
+                                <div class="hover-content">
+                                  <img src="ui/media/images/plus-icon-l.png" alt="">
+                                </div>
+                                <div class="date">
+                                    <h5>January 2022</h5>
+                                </div>
+                                <div class="img-box">
+                                    <img src="ui/media/images/gl11.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="gallery-item-box">
+                                <div class="hover-content">
+                                  <img src="ui/media/images/plus-icon-l.png" alt="">
+                                </div>
+                                <div class="date">
+                                    <h5>December 2021</h5>
+                                </div>
+                                <div class="img-box">
+                                    <img src="ui/media/images/gl12.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="gallery-item-box">
+                                <div class="hover-content">
+                                  <img src="ui/media/images/plus-icon-l.png" alt="">
+                                </div>
+                                <div class="date">
+                                    <h5>November 2021</h5>
+                                </div>
+                                <div class="img-box">
+                                    <img src="ui/media/images/gl13.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+  
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </section>
+     </main>
+    </div> 
+
+
+    <!--  -->
+    <div id="a1" class="popup-fw">
+        <div class="d-flex justify-content-between p-3">
+          <div class="slider-counter">
+              <h5 class="pagingInfo"></h5>
+          </div>
+          <button type="button" class="close text-white">
+            <img src="ui/media/images/gallery-modal-close.png" alt="">
+          </button>
+        </div>
+        <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="gallery-popup">
+                    <div class="main-image">
+                        <img src="ui/media/images/gl1.jpg" alt="">
+                    </div>
+                    <div class="main-image">
+                        <img src="ui/media/images/gl2.jpg" alt="">
+                    </div>
+                    <div class="main-image">
+                      <img src="ui/media/images/gl3.jpg" alt="">
+                    </div>
+                    <div class="main-image">
+                      <img src="ui/media/images/gl4.jpg" alt="">
+                    </div>
+                    <div class="main-image">
+                      <img src="ui/media/images/gl5.jpg" alt="">
+                    </div>
+                    <div class="main-image">
+                      <img src="ui/media/images/gl6.jpg" alt="">
+                    </div>
+                    <div class="main-image">
+                      <img src="ui/media/images/gl7.jpg" alt="">
+                    </div>
+                    <div class="main-image">
+                      <img src="ui/media/images/gl8.jpg" alt="">
+                    </div>
+                    <div class="main-image">
+                      <img src="ui/media/images/gl9.jpg" alt="">
+                    </div>
+                    <div class="main-image">
+                        <img src="ui/media/images/gl10.jpg" alt="">
+                      </div>
+                  </div>
+                  
+                  <div class="gallery-popup-nav hidden-xs">
+                    <div class="thumbnail-image">
+                      <img src="ui/media/images/gl1.jpg" alt="">
+                    </div>
+                    <div class="thumbnail-image">
+                      <img src="ui/media/images/gl2.jpg" alt="">
+                    </div>
+                    <div class="thumbnail-image">
+                      <img src="ui/media/images/gl3.jpg" alt="">
+                    </div>
+                    <div class="thumbnail-image">
+                      <img src="ui/media/images/gl4.jpg" alt="">
+                    </div>
+                    <div class="thumbnail-image">
+                      <img src="ui/media/images/gl5.jpg" alt="">
+                    </div>
+                    <div class="thumbnail-image">
+                        <img src="ui/media/images/gl6.jpg" alt="">
+                    </div>
+                    <div class="thumbnail-image">
+                        <img src="ui/media/images/gl7.jpg" alt="">
+                    </div>
+                    <div class="thumbnail-image">
+                        <img src="ui/media/images/gl8.jpg" alt="">
+                    </div>
+                    <div class="thumbnail-image">
+                      <img src="ui/media/images/gl9.jpg" alt="">
+                    </div>
+                    <div class="thumbnail-image">
+                      <img src="ui/media/images/gl10.jpg" alt="">
+                    </div>
+                  </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!--  -->
+    <div id="a2" class="popup-fw">
+      <div class="d-flex justify-content-between p-3">
+        <div class="slider-counter">
+            <h5 class="pagingInfo"></h5>
+        </div>
+        <button type="button" class="close text-white">
+            <img src="ui/media/images/gallery-modal-close.png" alt="">
+        </button>
+      </div>
+
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-lg-10">
+                  <div class="gallery-popup">
+                    
+                      <div class="main-image">
+                          <img src="ui/media/images/gl1.jpg" alt="">
+                      </div>
+                      <div class="main-image">
+                          <img src="ui/media/images/gl2.jpg" alt="">
+                      </div>
+                      <div class="main-image">
+                        <img src="ui/media/images/gl3.jpg" alt="">
+                      </div>
+                      <div class="main-image">
+                        <img src="ui/media/images/gl4.jpg" alt="">
+                      </div>
+                      <div class="main-image">
+                        <img src="ui/media/images/gl5.jpg" alt="">
+                      </div>
+                      <div class="main-image">
+                        <img src="ui/media/images/gl6.jpg" alt="">
+                      </div>
+                      <div class="main-image">
+                        <img src="ui/media/images/gl7.jpg" alt="">
+                      </div>
+                    </div>
+                    
+                    <div class="gallery-popup-nav hidden-xs">
+                      <div class="thumbnail-image">
+                        <img src="ui/media/images/gl1.jpg" alt="">
+                      </div>
+                      <div class="thumbnail-image">
+                        <img src="ui/media/images/gl2.jpg" alt="">
+                      </div>
+                      <div class="thumbnail-image">
+                        <img src="ui/media/images/gl3.jpg" alt="">
+                      </div>
+                      <div class="thumbnail-image">
+                        <img src="ui/media/images/gl4.jpg" alt="">
+                      </div>
+                      <div class="thumbnail-image">
+                        <img src="ui/media/images/gl5.jpg" alt="">
+                      </div>
+                      <div class="thumbnail-image">
+                          <img src="ui/media/images/gl6.jpg" alt="">
+                      </div>
+                      <div class="thumbnail-image">
+                          <img src="ui/media/images/gl7.jpg" alt="">
+                      </div>
+                    </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!--  -->
+    <div id="a3" class="popup-fw">
+      <div class="d-flex justify-content-between p-3">
+          <div class="slider-counter">
+              <h5 class="pagingInfo"></h5>
+          </div>
+          <button type="button" class="close text-white">
+              <img src="ui/media/images/gallery-modal-close.png" alt="">
+          </button>
+      </div>
+
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-lg-10">
+                  <div class="gallery-popup">
+                      <div class="main-image">
+                          <img src="ui/media/images/gl1.jpg" alt="">
+                      </div>
+                      <div class="main-image">
+                          <img src="ui/media/images/gl2.jpg" alt="">
+                      </div>
+                      <div class="main-image">
+                        <img src="ui/media/images/gl3.jpg" alt="">
+                      </div>
+                      <div class="main-image">
+                        <img src="ui/media/images/gl4.jpg" alt="">
+                      </div>
+                      <div class="main-image">
+                        <img src="ui/media/images/gl5.jpg" alt="">
+                      </div>
+                      <div class="main-image">
+                        <img src="ui/media/images/gl6.jpg" alt="">
+                      </div>
+                      <div class="main-image">
+                        <img src="ui/media/images/gl7.jpg" alt="">
+                      </div>
+                      <div class="main-image">
+                        <img src="ui/media/images/gl8.jpg" alt="">
+                      </div>
+                    </div>
+                    
+                    <div class="gallery-popup-nav hidden-xs">
+                      <div class="thumbnail-image">
+                        <img src="ui/media/images/gl1.jpg" alt="">
+                      </div>
+                      <div class="thumbnail-image">
+                        <img src="ui/media/images/gl2.jpg" alt="">
+                      </div>
+                      <div class="thumbnail-image">
+                        <img src="ui/media/images/gl3.jpg" alt="">
+                      </div>
+                      <div class="thumbnail-image">
+                        <img src="ui/media/images/gl4.jpg" alt="">
+                      </div>
+                      <div class="thumbnail-image">
+                        <img src="ui/media/images/gl5.jpg" alt="">
+                      </div>
+                      <div class="thumbnail-image">
+                          <img src="ui/media/images/gl6.jpg" alt="">
+                      </div>
+                      <div class="thumbnail-image">
+                          <img src="ui/media/images/gl7.jpg" alt="">
+                      </div>
+                      <div class="thumbnail-image">
+                          <img src="ui/media/images/gl8.jpg" alt="">
+                      </div>
+                    </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <script src="ui/javascript/uicreep-minify.js"></script>
+    <script src="ui/javascript/jquery.fancybox.min.js"></script>
+    <script src="ui/javascript/intlTelInput-jquery.min.js"></script>
+    <script src='ui/javascript/slick.min.js'></script>
+    <script src="ui/javascript/jarallax.js"></script>
+    <script src="ui/javascript/jarallax-video.min.js"></script>
+    <script src="ui/javascript/jarallax-element.min.js"></script>
+  
+    <!-- <script src="ui/javascript/gallery.js"></script> -->
+    <!-- 27-02-2023 -->
+    <script src='ui/javascript/three.min.js'></script>
+    <script src='ui/javascript/panolens.min.js'></script>
+    <!-- end -->
+    <script src="ui/javascript/custom.js"></script>
+    <script src="ui/javascript/horizontal_timeline.2.0.min.js"></script>
+
+    <script>
+        function popupInit(){
+        var numSlick = 0;
+
+        $('.gallery-popup').each( function() {
+            numSlick++;
+
+            $(this).addClass('popup-slider-for-' + numSlick ).slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: true,
+              fade: true,
+              asNavFor: '.popup-slider-nav-' + numSlick
+            });
+            
+            var $status = $(this).closest('.popup-fw').find('.pagingInfo').addClass('pagingInfo-' + numSlick );
+            var $slickElement = $('.popup-slider-for-' + numSlick)
+            $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide){ 
+                var i = (currentSlide ?      currentSlide : 0) + 1;
+                $status.text(i + '/' + slick.slideCount);
+            });
+        });
+
+          numSlick = 0;
+          $('.gallery-popup-nav').each( function() {
+            numSlick++;
+            $(this).addClass( 'popup-slider-nav-' + numSlick ).slick({
+              vertical: false,
+              slidesToShow: 6,
+              slidesToScroll: 1,
+              asNavFor: '.popup-slider-for-' + numSlick,
+              arrow: false,
+              focusOnSelect: true,
+            });
+          });
+
+        }
+
+        popupInit();
+            
+        $('.trg').click(function(){
+          var trg = $(this).attr('data-trg');
+          console.log(trg)
+          $('.popup-fw').removeClass("popup-show");
+          $('#' + trg).addClass("popup-show");
+        });
+
+        $('.close').click(function(){
+          $('.popup-fw').removeClass("popup-show");
+        })
+    </script>
+</body>
+
+</html>

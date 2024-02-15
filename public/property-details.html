@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Palma</title>
+    <!-- Bootstrap -->
+    <link href="ui/stylesheet/main.css" rel="stylesheet">
+    <link href="ui/stylesheet/fancybox.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='ui/stylesheet/slick.min.css'>
+    <link rel='stylesheet' href='ui/stylesheet/slick-theme.min.css'>
+    <link href="ui/stylesheet/custom.css" rel="stylesheet">
+    <link rel="icon" href="ui/media/images/favicon.png">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body class="body">
+    <div class="page-wrapper">
+       <!-- aside start-->
+       <div class="aside-wrapper">
+        <div class="aside-wrapper-top">
+            <button class="aside-close">
+                <img src="ui/media/images/side-menu-close-btn.png" alt="">
+            </button>
+            <ul class="aside-menu">
+                <!-- <li><a href="#">Home</a></li> -->
+                <li>
+                    <a href="#">Palma Holding</a>
+                    <ul class="drop">
+                        <li><a href="about-us.html">About us</a></li>
+                        <li><a href="why-palma.html">Why Palma</a></li>
+                    </ul>
+                </li>
+            
+                <li>
+                    <a href="palma-developments.html">Palma Development</a>
+                    <ul class="drop">
+                        <li>
+                            <a href="palma-development-project.html">Our Projects</a>
+                            <ul class="drop">
+                                <li><a href="project-details-serenia-living.html">Serenia Living</a></li>
+                                <li><a href="project-details-serenia-residence.html">Serenia Residence</a></li>
+                                <li><a href="project-details-silverine-towers.html">Silverine Towers</a></li>
+                                <li><a href="more-project.html">More Projects</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="search-listing-development.html">Our Current Listings</a></li>
+                        <li><a href="palma-development-communities.html">Our Communities</a></li>
+                        <li><a href="constructions.html">Construction Updates</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="palma-communities-main.html">Palma Communities</a>
+                    <ul class="drop">
+                        <li><a href="community-management.html">Community Management</a></li>
+                        <li><a href="property-management.html">Property Management</a></li>
+                        <li><a href="our-projects.html">Projects Under Management</a></li>
+                        <li><a href="palma-development-communities.html">Our Communities</a></li>
+                        <li><a href="leasing.html">Current Leasing Options</a></li>
+                        <li><a href="community-events.html">Events</a></li>
+                    </ul>
+                </li>
+                <!-- <li><a href="news-blog.html">News &amp; Blog</a></li> -->
+                <li><a href="media-centre.html">News &amp; Blog</a></li>
+                <li><a href="career.html">Careers</a></li>
+                <li><a href="sales-leasing.html">Leasing</a></li>
+                <li><a href="contact-us.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="aside-wrapper-bottom">
+            <ul class="social_media list-unstyled">
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <!-- aside end-->
+        <!-- header start-->
+        <header class="header header-home" data-aos="fade-in">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="ui/media/images/logo-white.png" height="159" width="50" alt="logo">
+                    </a>
+                    <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Palma Holding
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
+                                <li><a class="dropdown-item" href="why-palma.html">Why Palma</a></li>
+                                <li><a class="dropdown-item" href="career.html">Careers</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a  class="nav-link dropdown-toggle" href="palma-developments.html" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Palma Development</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item dropdown-toggle" href="palma-development-project.html">Our Projects</a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="project-details-serenia-living.html">Serenia Living</a>
+                                                <a class="dropdown-item" href="project-details-serenia-residence.html">Serenia Residence</a>
+                                                <a class="dropdown-item" href="project-details-silverine-towers.html">Silverine Towers</a>
+                                                <a class="dropdown-item" href="more-project.html">More Projects</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="search-listing-development.html">Our Current Listings</a></li>
+                                    <li><a class="dropdown-item" href="palma-development-communities.html">Our Communities</a></li>
+                                    <li><a class="dropdown-item" href="constructions.html">Construction Updates</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="palma-communities-main.html" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Palma Communities</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="community-management.html">Community Management</a></li>
+                                    <li><a class="dropdown-item" href="property-management.html">Property Management</a></li>
+                                    <li><a class="dropdown-item" href="our-projects.html">Projects Under Management</a></li>
+                                    <li><a class="dropdown-item" href="palma-communities.html">Our Communities</a></li>
+                                    <li><a class="dropdown-item" href="leasing.html">Current Leasing Options</a></li>
+                                    <li><a class="dropdown-item" href="community-events.html">Events</a></li>
+                                </ul>
+                            </li>
+                            <li  class="nav-item">
+                                <!-- <a class="nav-link" href="news-blog.html">News &amp; Blog</a> -->
+                                <a class="nav-link" href="media-centre.html">News &amp; Blog</a>
+                            </li>
+                            <li  class="nav-item">
+                                <!-- <a class="nav-link" href="news-blog.html">News &amp; Blog</a> -->
+                                <a class="nav-link" href="contact-us.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="text-white nav-link nav-icon asideToggle-btn d-lg-none d-block" href="#"><i class="far fa-bars"></i></a>
+                </div>
+            </nav>
+        </header>
+        <!-- header end-->
+
+        <!-- start Main -->
+        <main class="main">
+            <!-- Start Banner Section -->
+           
+            <!-- end banner -->
+            <!-- section overview -->
+            <section class="py-lg-5 py-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-4">
+                                <div class="breadcrumb_menu" data-aos="fade-right" data-aos-duration="700"
+                                data-aos-delay="100" data-aos-easing="ease-in-sine"
+                                data-aos-anchor-placement="top-bottom" data-aos-offset="">
+                                    <span property="itemListElement" typeof="ListItem">
+                                      <a property="item" typeof="WebPage" title="Go to CF PADEL." href="#" class="home">
+                                        <span property="name">Home</span>
+                                      </a>
+                                      <meta property="position" content="1">
+                                    </span> 
+                                    /
+                                    <span property="itemListElement" typeof="ListItem">
+                                      <span property="name" class="current-item">SERENIA LIVING</span>
+                                      <meta property="url" content="#"><meta property="position" content="2">
+                                    </span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-8">
+                            <div class="mb-md-0 mb-3">
+                                <button class="show-gallery show-btn" data-bs-toggle="modal" data-bs-target="#property-details-popup" tabindex="0"><img src="ui/media/images/clarity_image-gallery-line.png" alt=""> Show Gallery</button>
+                                <img src="ui/media/images/gll1.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column justify-content-between">
+                            <div class="mb-md-0 mb-3">
+                                <img src="ui/media/images/gll2.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div>
+                                <img src="ui/media/images/gll3.jpg" alt="" class="img-fluid">     
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row flex-md-row-reverse">
+                        <div class="col-lg-4 mb-lg-0 mb-4">
+                            <div class="right-pd-box">
+                                <h3 class="price mb-4">1,750000 <small>AED</small></h3>
+
+                                <button class="primay-btn text-center w-100" data-bs-toggle="modal" data-bs-target="#enquireModal">
+                                   <img src="ui/media/images/email-white.png" alt=""> Enquire Now
+                                </button>
+
+                                <div class="row mt-4">
+                                    <div class="col-md-6 mb-md-0 mb-3">
+                                        <a href="#" class="contact-btn">
+                                            <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.5667 0.746985C11.5782 0.715376 11.5989 0.685647 11.6275 0.659525C11.6561 0.633402 11.692 0.611406 11.7331 0.594813C11.7743 0.578221 11.8198 0.567362 11.8672 0.562867C11.9146 0.558372 11.9628 0.560331 12.009 0.568629C13.2932 0.805593 14.464 1.26752 15.4048 1.90845C16.3456 2.54938 17.0236 3.34697 17.3715 4.22186C17.3837 4.25336 17.3865 4.2862 17.3799 4.31847C17.3733 4.35073 17.3574 4.38178 17.333 4.40982C17.3087 4.43786 17.2764 4.46232 17.238 4.48178C17.1997 4.50125 17.1561 4.51533 17.1097 4.52322L17.0194 4.53552C16.9393 4.53486 16.8617 4.51651 16.7982 4.48325C16.7347 4.44998 16.6888 4.40358 16.6673 4.35101C16.3537 3.55979 15.741 2.83844 14.8903 2.25893C14.0397 1.67941 12.9808 1.262 11.8194 1.04835C11.7732 1.04055 11.7298 1.02644 11.6918 1.00687C11.6538 0.987309 11.622 0.962695 11.5984 0.934523C11.5747 0.90635 11.5597 0.875204 11.5543 0.842969C11.5488 0.810734 11.5531 0.778081 11.5667 0.746985ZM11.0701 2.94876C11.7433 3.07176 12.3571 3.31325 12.8499 3.64899C13.3427 3.98472 13.6972 4.40289 13.8778 4.86148C13.8992 4.91405 13.9452 4.96045 14.0086 4.99371C14.0721 5.02698 14.1497 5.04532 14.2298 5.04599L14.3201 5.03369C14.3663 5.02589 14.4098 5.01178 14.4478 4.99221C14.4858 4.97265 14.5175 4.94804 14.5412 4.91986C14.5648 4.89169 14.5798 4.86054 14.5852 4.82831C14.5907 4.79607 14.5865 4.76342 14.5729 4.73233C14.3626 4.19024 13.9452 3.6958 13.3632 3.29932C12.7812 2.90284 12.0554 2.61849 11.2597 2.4752C11.2141 2.46592 11.1661 2.46306 11.1188 2.46677C11.0715 2.47049 11.0258 2.4807 10.9844 2.4968C10.9431 2.5129 10.907 2.53455 10.8782 2.56043C10.8495 2.58632 10.8288 2.61591 10.8174 2.6474C10.7925 2.7102 10.8051 2.77715 10.8524 2.83363C10.8998 2.89011 10.9781 2.9315 11.0701 2.94876ZM18.0666 9.08668C17.9198 9.85796 17.3662 10.5665 16.5091 11.0803C15.652 11.594 14.5499 11.8779 13.4083 11.8789C6.43893 11.8789 0.769531 8.01654 0.769531 3.26857C0.771008 2.49084 1.18765 1.74001 1.94176 1.1561C2.69587 0.5722 3.73597 0.195078 4.86811 0.0950624C5.10106 0.0765646 5.33656 0.109635 5.53979 0.189382C5.74302 0.26913 5.90317 0.391319 5.99657 0.537878L7.81114 3.42233C7.88139 3.53426 7.90991 3.65629 7.89416 3.77754C7.87841 3.8988 7.81887 4.01552 7.72086 4.1173L6.22226 5.67946C6.18714 5.71427 6.16615 5.75479 6.16139 5.79691C6.15663 5.83903 6.16829 5.88125 6.19518 5.91932C6.90671 6.91375 8.08997 7.71553 9.55348 8.1949C9.60774 8.21332 9.66833 8.22133 9.72877 8.21808C9.7892 8.21483 9.8472 8.20044 9.89654 8.17645L12.1625 7.14936C12.3118 7.08002 12.4844 7.03747 12.6643 7.02564C12.8442 7.01381 13.0256 7.0331 13.1916 7.08171L17.4166 8.3179C17.6317 8.38153 17.8111 8.49064 17.9282 8.62909C18.0452 8.76754 18.0938 8.92798 18.0666 9.08668ZM17.1277 8.77302L12.9028 7.53682C12.8478 7.52021 12.7877 7.5132 12.7278 7.51642C12.6679 7.51964 12.6101 7.533 12.5597 7.55527L10.3028 8.58236C10.1477 8.65409 9.96784 8.69694 9.78096 8.70665C9.59409 8.71636 9.40674 8.69259 9.23751 8.63771C7.63124 8.10738 6.3315 7.22626 5.54518 6.13457C5.46506 6.01951 5.42963 5.89236 5.44227 5.76529C5.45492 5.63823 5.51522 5.5155 5.61741 5.40885L7.116 3.84669C7.14949 3.81257 7.16957 3.77317 7.17431 3.73225C7.17905 3.69133 7.1683 3.65027 7.14309 3.61299L5.32852 0.734685C5.3032 0.689823 5.25867 0.651179 5.20072 0.623763C5.14278 0.596347 5.07407 0.581424 5.00352 0.580929H4.95838C4.0002 0.666015 3.12014 0.985606 2.48231 1.48011C1.84448 1.97462 1.49241 2.61028 1.49175 3.26857C1.49414 5.42118 2.7504 7.48515 4.98467 9.00727C7.21894 10.5294 10.2486 11.3852 13.4083 11.3869C14.3746 11.3864 15.3077 11.1466 16.0335 10.712C16.7594 10.2775 17.2285 9.67795 17.3534 9.02518C17.3609 8.97217 17.343 8.91893 17.3023 8.87346C17.2616 8.82799 17.2003 8.79274 17.1277 8.77302Z" fill="black"/>
+                                                </svg>
+                                                
+                                            Call
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="#"  class="contact-btn">
+                                            <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.1994 1.09009C6.88434 1.09127 5.59228 1.37941 4.45026 1.92616C3.30825 2.47292 2.35559 3.25947 1.68596 4.20848C1.01632 5.15749 0.65277 6.2363 0.631038 7.33882C0.609307 8.44134 0.930147 9.52963 1.56201 10.4967L0.628906 13.7857L4.55148 13.0033C5.5632 13.4687 6.6884 13.734 7.8411 13.7789C8.9938 13.8238 10.1435 13.6472 11.2023 13.2625C12.2612 12.8778 13.2011 12.2953 13.9503 11.5594C14.6996 10.8235 15.2382 9.95372 15.5252 9.01653C15.8122 8.07935 15.8398 7.09956 15.6061 6.15204C15.3723 5.20452 14.8834 4.31435 14.1765 3.54954C13.4697 2.78474 12.5636 2.16555 11.5277 1.73928C10.4918 1.31302 9.35335 1.09096 8.1994 1.09009ZM4.41415 3.97466H6.47755C6.57094 3.97466 6.6605 4.00576 6.72654 4.06113C6.79257 4.1165 6.82967 4.1916 6.82967 4.26991C6.81812 4.66365 6.89702 5.05558 7.06207 5.42432C7.13314 5.54776 7.14877 5.68855 7.10609 5.82087C7.0634 5.95318 6.96526 6.06816 6.82967 6.14473L6.10783 6.73522C6.42789 7.2593 6.84638 7.73681 7.34728 8.14946C7.83543 8.5763 8.4026 8.93422 9.02687 9.2094L9.7311 8.60414C10.0832 8.30889 10.2452 8.30889 10.5903 8.40928C11.03 8.54767 11.4975 8.61383 11.967 8.60414C12.059 8.60774 12.1461 8.64 12.2113 8.69461C12.2764 8.74922 12.3149 8.82224 12.3192 8.89939V10.6295C12.3149 10.7067 12.2764 10.7797 12.2113 10.8343C12.1461 10.8889 12.059 10.9212 11.967 10.9248C9.89575 10.8491 7.93237 10.1291 6.45995 8.90529C4.99809 7.67197 4.13902 6.02491 4.05147 4.28762C4.05231 4.20635 4.09047 4.12848 4.15801 4.0702C4.22556 4.01191 4.3173 3.97769 4.41415 3.97466Z" stroke="#949494" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                
+                                            Whatsapp
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <div class="w-50">
+                                    <a href="" class="btn2 border-right-0">
+                                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 3.81053L7.0455 3.48421L5.5 0L3.9545 3.48947L0 3.81053L3.003 6.3L2.101 10L5.5 8.03684L8.899 10L8.0025 6.3L11 3.81053ZM5.5 7.05263L3.432 8.24737L3.982 5.99474L2.156 4.47895L4.565 4.27895L5.5 2.15789L6.4405 4.28421L8.8495 4.48421L7.0235 6L7.5735 8.25263L5.5 7.05263Z" fill="black"/>
+                                            </svg>
+                                            
+                                        Save
+                                    </a>
+                                </div>
+                                <div class="w-50">
+                                    <a href="" class="btn2">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.41667 5.25002V2.91669L10.5 7.00002L6.41667 11.0834V8.69169C3.5 8.69169 1.45833 9.62502 0 11.6667C0.583333 8.75002 2.33333 5.83335 6.41667 5.25002ZM9.91667 4.66669V2.91669L14 7.00002L9.91667 11.0834V9.33335L12.25 7.00002L9.91667 4.66669Z" fill="black"/>
+                                            </svg>
+                                            
+                                        Share
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="d-flex align-items-start mb-3">
+                                <img src="ui/media/images/location-icon2.png" alt="" class="mr-2">
+                                <p class="mb-0">Gold Coast Highway Palm Beach QLD 4221, Dubai, Downtown</p>
+                            </div>
+
+                            <h2 class="mb-4">Hot Deal | Double Row | Vacant  Ready to Move in</h2>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                   <div class="pd d-flex align-items-start">
+                                    <img src="ui/media/images/house-icon.png" alt="" class="mr-3">
+                                    <p class="mb-0">Property type : <span>Apartment</span></p>
+                                   </div> 
+                                </div>
+                                <div class="col-md-6  mb-3">
+                                    <div class="pd d-flex align-items-start">
+                                     <img src="ui/media/images/area-icon.png" alt="" class="mr-3">
+                                     <p class="mb-0">Property size :    <span>1.500 sqft</span></p>
+                                    </div> 
+                                 </div>
+                                 <div class="col-md-6  mb-3">
+                                    <div class="pd d-flex align-items-start">
+                                     <img src="ui/media/images/bed-icon2.png" alt="" class="mr-3">
+                                     <p class="mb-0">Property type :    <span>3 Bed</span></p>
+                                    </div> 
+                                 </div>
+                                 <div class="col-md-6  mb-3">
+                                    <div class="pd d-flex align-items-start">
+                                     <img src="ui/media/images/bath-icon2.png" alt="" class="mr-3">
+                                     <p class="mb-0">Bathrooms :    <span> 3</span></p>
+                                    </div> 
+                                 </div>
+                            </div>
+                            <hr>
+
+                            <h4 class="mb-4">Amenities</h4>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                   <div class="pdb d-flex align-items-start">
+                                    <img src="ui/media/images/arcticons_mi-home.png" alt="" class="mr-3">
+                                    <p class="mb-0">Unfurnished</p>
+                                   </div> 
+                                </div>
+                                <div class="col-md-6  mb-3">
+                                    <div class="pdb d-flex align-items-start">
+                                     <img src="ui/media/images/ac-icon.png" alt="" class="mr-3">
+                                     <p class="mb-0">Central A/C</p>
+                                    </div> 
+                                 </div>
+                                 <div class="col-md-6  mb-3">
+                                    <div class="pdb d-flex align-items-start">
+                                     <img src="ui/media/images/material-symbols_balcony-rounded.png" alt="" class="mr-3">
+                                     <p class="mb-0">Balcony</p>
+                                    </div> 
+                                 </div>
+                                 <div class="col-md-6  mb-3">
+                                    <div class="pdb d-flex align-items-start">
+                                     <img src="ui/media/images/children-icon.png" alt="" class="mr-3">
+                                     <p class="mb-0">Children's Play Area</p>
+                                    </div> 
+                                 </div>
+                                 <div class="col-md-6  mb-3">
+                                    <div class="pdb d-flex align-items-start">
+                                     <img src="ui/media/images/hanger-icon.png" alt="" class="mr-3">
+                                     <p class="mb-0">Built in Wardrobes</p>
+                                    </div> 
+                                 </div>
+                            </div>
+                            <hr>
+
+                            <h4 class="mb-4">Location</h4>
+                            <div class="map position-relative mb-5">
+                                <button class="show-btn" data-bs-toggle="modal" data-bs-target="#mapModal">
+                                    <img src="ui/media/images/ri_direction-line.png" alt="">
+                                    Show map
+                                </button>
+                                <img src="ui/media/images/map-bw.jpg" alt="" class="img-fluid">
+                            </div>
+                            <hr>
+
+                            <h4 class="mb-4">About this property</h4>
+                            <p>Savills is pleased to offer you this beautiful 2 bedroom villa located at Palmera 3 community of Arabian Ranches. Inspired by Spanish architecture cluster homes, each of these family attached villas is distinctly different from the other yet they are secure within their clusters, which lend a feel of community living.</p>
+
+                            <h6 class="font-weight-bold mb-4">Key features include:</h6>
+                            
+                            <ul>
+                                <li>2 Bedrooms with 3 Bathrooms</li>
+                                <li>Built up area 1,889 Sq.Ft.</li>
+                                <li>Semi-closed Kitchen</li>
+                                <li>Spacious Living and Dining Area</li>
+                                <li>Irrigated Garden</li>
+                                <li>Community Swimming Pool and Gym</li>
+                                <li>2 Parking</li>
+                            </ul>
+
+                            <p>Photos are for Illustration purposes only. Viewings require 24-48 hours notice.</p>
+                                <p>Located at the southern tip of Arabian Ranches, the Palmera community comprises of modern townhouses built in clusters around the ambient setting of Palmera Lake. Characterized by earthy colors, pitched roofs and other Spanish elements, the homes boast stunning views of the surrounding greenery and lake. The tranquil Palmera Lake is encompassed by a blissful, nature-filled expanse thats ideal for evening walks, morning jogs or a bit of peaceful reflection.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <!-- section related post -->
+            
+            
+            <section class="related-post-section py-lg-5 py-4">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-5">
+                            <div class="title text-center text-uppercase mb-lg-5 mb-4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
+                                <h2>
+                                    Related properties
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="rp-carousel" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+                                <div class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <div class="rp-item-box">
+                                        <div class="img-box">
+                                            <div class="photo-counter">
+                                                <img src="ui/media/images/photo-icon.png" alt=""> 7
+                                            </div>
+                                            <div class="logo">
+                                                Apartment
+                                            </div>
+                                            <img src="ui/media/images/rp1.jpg" alt="">
+                                        </div>
+                                       <div class="bottom">
+                                            <h4>1750000 AED</h4>
+                                            <p>Exclusive | Vacant | Modern</p>
+                                            <p class="address"><img src="ui/media/images/location-icon2.png" alt="" class="mr-2"> Al Furjan, Dubai</p>
+                                            <ul class="list-unstyled d-flex flex-wrap property-list">
+                                                <li><img src="ui/media/images/bed-icon2.png" alt=""> 2 Bed</li>
+                                                <li><img src="ui/media/images/bath-icon2.png" alt=""> 2 Bath</li>
+                                                <li><img src="ui/media/images/area-icon.png" alt=""> 1,500 sqft</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="rp-item-box">
+                                        <div class="img-box">
+                                            <div class="photo-counter">
+                                                <img src="ui/media/images/photo-icon.png" alt=""> 7
+                                            </div>
+                                            <div class="logo">
+                                                Apartment
+                                            </div>
+                                            <img src="ui/media/images/rp2.jpg" alt="">
+                                        </div>
+                                       <div class="bottom">
+                                            <h4>1750000 AED</h4>
+                                            <p>Exclusive | Vacant | Modern</p>
+                                            <p class="address"><img src="ui/media/images/location-icon2.png" alt="" class="mr-2"> Al Furjan, Dubai</p>
+                                            <ul class="list-unstyled d-flex flex-wrap property-list">
+                                                <li><img src="ui/media/images/bed-icon2.png" alt=""> 2 Bed</li>
+                                                <li><img src="ui/media/images/bath-icon2.png" alt=""> 2 Bath</li>
+                                                <li><img src="ui/media/images/area-icon.png" alt=""> 1,500 sqft</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="rp-item-box">
+                                        <div class="img-box">
+                                            <div class="photo-counter">
+                                                <img src="ui/media/images/photo-icon.png" alt=""> 7
+                                            </div>
+                                            <div class="logo">
+                                                Apartment
+                                            </div>
+                                            <img src="ui/media/images/rp3.jpg" alt="">
+                                        </div>
+                                       <div class="bottom">
+                                            <h4>1750000 AED</h4>
+                                            <p>Exclusive | Vacant | Modern</p>
+                                            <p class="address"><img src="ui/media/images/location-icon2.png" alt="" class="mr-2"> Al Furjan, Dubai</p>
+                                            <ul class="list-unstyled d-flex flex-wrap property-list">
+                                                <li><img src="ui/media/images/bed-icon2.png" alt=""> 2 Bed</li>
+                                                <li><img src="ui/media/images/bath-icon2.png" alt=""> 2 Bath</li>
+                                                <li><img src="ui/media/images/area-icon.png" alt=""> 1,500 sqft</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="rp-item-box">
+                                        <div class="img-box">
+                                            <div class="photo-counter">
+                                                <img src="ui/media/images/photo-icon.png" alt=""> 7
+                                            </div>
+                                            <div class="logo">
+                                                Apartment
+                                            </div>
+                                            <img src="ui/media/images/rp4.jpg" alt="">
+                                        </div>
+                                        <div class="bottom">
+                                            <h4>1750000 AED</h4>
+                                            <p>Exclusive | Vacant | Modern</p>
+                                            <p class="address"><img src="ui/media/images/location-icon2.png" alt="" class="mr-2"> Al Furjan, Dubai</p>
+                                            <ul class="list-unstyled d-flex flex-wrap property-list">
+                                                <li><img src="ui/media/images/bed-icon2.png" alt=""> 2 Bed</li>
+                                                <li><img src="ui/media/images/bath-icon2.png" alt=""> 2 Bath</li>
+                                                <li><img src="ui/media/images/area-icon.png" alt=""> 1,500 sqft</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="rp-item-box">
+                                        <div class="img-box">
+                                            <div class="photo-counter">
+                                                <img src="ui/media/images/photo-icon.png" alt=""> 7
+                                            </div>
+                                            <div class="logo">
+                                                Apartment
+                                            </div>
+                                            <img src="ui/media/images/rp3.jpg" alt="">
+                                        </div>
+                                       <div class="bottom">
+                                            <h4>1750000 AED</h4>
+                                            <p>Exclusive | Vacant | Modern</p>
+                                            <p class="address"><img src="ui/media/images/location-icon2.png" alt="" class="mr-2"> Al Furjan, Dubai</p>
+                                            <ul class="list-unstyled d-flex flex-wrap property-list">
+                                                <li><img src="ui/media/images/bed-icon2.png" alt=""> 2 Bed</li>
+                                                <li><img src="ui/media/images/bath-icon2.png" alt=""> 2 Bath</li>
+                                                <li><img src="ui/media/images/area-icon.png" alt=""> 1,500 sqft</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--end  section related post -->
+
+            <!-- newsletter section -->
+            <section class="news-letter-section position-relative py-lg-5 py-4"  data-jarallax data-speed="0.2">
+                <div class="centered w-100 px-3">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 md-mb-0 mb-3">
+                                <div class="" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
+                                    <h6 class="news-letter-title text-uppercase mb-4">Newsletter</h6>
+                                    <h5 class="mb-0 text-white">Join our community to stay up to date with our latest blog, posts and newletters.</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="news-letter-form">
+                                    <form action="">
+                                        <input type="text" placeholder="Enter email address">
+                                        <button>Send</button>
+                                    </form>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="ui/media/images/parallax-bg6.jpg" alt="Image" class="jarallax-img">
+            </section>
+            <!-- end newsletter section -->
+        </main>
+
+        <!-- Start Footer -->
+        <footer>
+            <div class="tob-footer">
+                <div class="container">
+                    <div class="row justify-content-center mb-4">
+                        <div class="col-md-10 text-center">
+                            <div class="footer-logo d-inline-block mb-4"><img src="ui/media/images/logo-footer.png" class="img-fluid" alt="logo"></div>
+                            <p class="mb-4">Founded in 1998 in Dubai, United Arab Emirates, Palma focuses on Dubai’s premium real estate areas, with an unmatched reputation for offering quality, professional service and developments.</p>
+                            <div class="d-inline-flex contact-media">
+                                <a href="">Call Us</a>
+                                <a href="">EMAIL Us</a>
+                            </div>
+                        </div>
+                    </div>
+
+                 
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="footer-links-area">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h3>About Us</h3>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">Mission Vision & Values</a></li>
+                                                    <li><a href="#">Ceo's Message</a></li>
+                                                    <li><a href="#">Milestone Timeline</a></li>
+                                                    <li><a href="#">Awards</a></li>
+                                                    <li><a href="#">Divisions</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h3>Why Palma</h3>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">Our Philospophy</a></li>
+                                                    <li><a href="#">Our Approach</a></li>
+                                                    <li><a href="#">Our Trust</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <h3>Media Centre</h3>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">News</a></li>
+                                                     <li><a href="#">Events</a></li>
+                                                     <li><a href="#">Our Blog</a></li>
+                                                     <li><a href="#">Press Releasee</a></li>
+                                                     <li><a href="#">Customer Service</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h3>Palma Communities</h3>
+                                                <ul class="list-unstyled">
+                                                     <li><a href="#">Community Management</a></li>
+                                                     <li><a href="#">Property Management</a></li>
+                                                     <li><a href="#">Leasing</a></li>
+                                                     <li><a href="#">Community Events</a></li>
+                                                     <li><a href="#">Propspace integration</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h3>Palma Developments</h3>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">Our Projects</a></li>
+                                                    <li><a href="#">Propspace integration</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                       
+                       
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex flex-wrap justify-content-md-between align-items-center">
+                                <ul class="social_media list-unstyled mb-md-0 mb-3">
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                                <div class="copyright">
+                                    <p class="mb-0">All Rights Reserved. 2022 Palma Holdings.</p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- enquire modal -->
+    <div class="modal fade" id="enquireModal" tabindex="-1" role="dialog" aria-labelledby="enquireModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+           
+            <div class="modal-body p-0">
+             <div class="row">
+                <div class="col-md-4">
+                    <img src="ui/media/images/z2.jpg" alt="" class="object-cover d-none d-md-block">
+                </div>
+                <div class="col-md-8">
+                    <div class="contact-us-form-wrapper pl-md-0 p-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+                        <div class="title">
+                            <span class="primary-color">Let’s talk!</span>
+                            <h2>Register Your Interest</h2>
+                        </div>
+                        <form action="">
+                            <div class="mb-3">
+                                <input class="form-control" type="text" placeholder="First Name">
+                            </div>
+                            <div class="mb-3">
+                                <input class="form-control" type="text" placeholder="Last Name">
+                            </div>
+                            <div class="mb-3">
+                                <div class="select-style2">
+                                    <select>
+                                        <option value="">Country</option>
+                                        <option value="">India</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" id="phone" class="input-style" placeholder="Enter phone no." /></div>
+                            <div class="mb-3">
+                                <input class="form-control" type="email" placeholder="Email Address">
+                            </div>
+                            <div class="mb-3 text-center">
+                                <button class="submit-btn">
+                                    SUBMIT
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+             </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+      <!-- end-nquire-modal -->
+
+      <!-- show gallery modal -->
+      <div class="modal popup-image-gallery" id="property-details-popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+                    <div class="d-flex justify-content-between p-3">
+                    <div class="slider-counter">
+                        <h5 class="pagingInfo3"></h5>
+                    </div>
+                    <button type="button" class="close text-white" data-bs-dismiss="modal" aria-label="Close" >
+                        <img src="ui/media/images/gallery-modal-close.png" alt="">
+                    </button>
+                </div>
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="property-details-popup-for3 gallery-popup">
+                                <div class="main-image">
+                                    <img src="ui/media/images/gl1.jpg" alt="">
+                                </div>
+                                <div class="main-image">
+                                    <img src="ui/media/images/gl2.jpg" alt="">
+                                </div>
+                                <div class="main-image">
+                                  <img src="ui/media/images/gl3.jpg" alt="">
+                                </div>
+                                <div class="main-image">
+                                  <img src="ui/media/images/gl4.jpg" alt="">
+                                </div>
+                                <div class="main-image">
+                                  <img src="ui/media/images/gl5.jpg" alt="">
+                                </div>
+                                <div class="main-image">
+                                  <img src="ui/media/images/gl6.jpg" alt="">
+                                </div>
+                                <div class="main-image">
+                                  <img src="ui/media/images/gl7.jpg" alt="">
+                                </div>
+                                <div class="main-image">
+                                  <img src="ui/media/images/gl8.jpg" alt="">
+                                </div>
+                                <div class="main-image">
+                                  <img src="ui/media/images/gl9.jpg" alt="">
+                                </div>
+                                <div class="main-image">
+                                    <img src="ui/media/images/gl10.jpg" alt="">
+                                  </div>
+                            </div>
+                              
+                            <div class="property-details-popup-nav3 gallery-popup-nav hidden-xs">
+                                <div class="thumbnail-image">
+                                  <img src="ui/media/images/gl1.jpg" alt="">
+                                </div>
+                                <div class="thumbnail-image">
+                                  <img src="ui/media/images/gl2.jpg" alt="">
+                                </div>
+                                <div class="thumbnail-image">
+                                  <img src="ui/media/images/gl3.jpg" alt="">
+                                </div>
+                                <div class="thumbnail-image">
+                                  <img src="ui/media/images/gl4.jpg" alt="">
+                                </div>
+                                <div class="thumbnail-image">
+                                  <img src="ui/media/images/gl5.jpg" alt="">
+                                </div>
+                                <div class="thumbnail-image">
+                                    <img src="ui/media/images/gl6.jpg" alt="">
+                                </div>
+                                <div class="thumbnail-image">
+                                    <img src="ui/media/images/gl7.jpg" alt="">
+                                </div>
+                                <div class="thumbnail-image">
+                                    <img src="ui/media/images/gl8.jpg" alt="">
+                                </div>
+                                <div class="thumbnail-image">
+                                  <img src="ui/media/images/gl9.jpg" alt="">
+                                </div>
+                                <div class="thumbnail-image">
+                                  <img src="ui/media/images/gl10.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end -->
+
+      <!-- map show modal -->
+      <div class="modal popup-image-gallery" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+                    <div class="d-flex justify-content-end p-3">
+                   
+                    <button type="button" class="close text-white" data-bs-dismiss="modal" aria-label="Close" >
+                        <img src="ui/media/images/gallery-modal-close.png" alt="">
+                    </button>
+                </div>
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="map-wrapper">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.8096791876446!2d55.29405495067835!3d25.27698698377986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf1db3aa39d20f5e!2zMjXCsDE2JzM3LjIiTiA1NcKwMTcnNDYuNSJF!5e0!3m2!1sen!2sin!4v1672661896264!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end  -->
+
+
+
+    <script src="ui/javascript/uicreep-minify.js"></script>
+    <script src="ui/javascript/jquery.fancybox.min.js"></script>
+    <script src="ui/javascript/intlTelInput-jquery.min.js"></script>
+    
+    <script src="ui/javascript/jarallax.js"></script>
+    <script src="ui/javascript/jarallax-video.min.js"></script>
+    <script src="ui/javascript/jarallax-element.min.js"></script>
+    <script src='ui/javascript/slick.min.js'></script>
+    <script src="ui/javascript/gallery.js"></script>
+    <!-- 27-02-2023 -->
+    <script src='ui/javascript/three.min.js'></script>
+    <script src='ui/javascript/panolens.min.js'></script>
+    <!-- end -->
+    <script src="ui/javascript/custom.js"></script>
+    <script src="ui/javascript/horizontal_timeline.2.0.min.js"></script>
+    
+</body>
+
+</html>
